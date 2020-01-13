@@ -10,7 +10,7 @@ const bot = new SlackBot({
 });
 
 app.post('/monday', (req, res) => {
-    bot.postMessageToChannel('bot-test', 'A cargar las hora chiques!!!', {})
+    bot.postMessage('A cargar las hora chiques!!!', {})
     res.send()
 });
 
