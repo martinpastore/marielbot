@@ -9,8 +9,9 @@ const bot = new SlackBot({
     name: 'MarielBot'
 });
 
-app.get('/monday', (req, res) => {
+app.post('/monday', (req, res) => {
     bot.postMessageToChannel('bot-test', 'A cargar las hora chiques!!!', {})
+    res.send()
 });
 
 app.listen(process.env.PORT || '3000');
