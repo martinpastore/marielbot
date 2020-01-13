@@ -4,7 +4,6 @@ require('dotenv').config();
 
 const app = express();
 
-
 const bot = new SlackBot({
     token: `${process.env.BOT_TOKEN}`,
     name: 'MarielBot'
@@ -14,4 +13,4 @@ app.get('/monday', (req, res) => {
     bot.postMessageToChannel('bot-test', 'A cargar las hora chiques!!!', {})
 });
 
-app.listen('8080');
+app.listen(process.env.PORT || '3000');
