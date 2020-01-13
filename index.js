@@ -6,7 +6,7 @@ const app = express();
 app.post('/monday', (req, res) => {
     res.send({
         "response_type": "in_channel",
-        "text": "@canal *¡BUEN LUNES!* No olviden cargar las hora :rezo::tono_de_piel-4:",
+        "text": "@canal *BUEN LUNES!* A cargar _les hores chiques_!!",
         "attachments": [{
             "text": "https://tarmacio.hubplanner.com/time_sheets"
         }]
