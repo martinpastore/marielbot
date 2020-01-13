@@ -11,7 +11,7 @@ const bot = new SlackBot({
 });
 
 app.get('/monday', (req, res) => {
-    console.log(req)
+    bot.postMessageToChannel('bot-test', 'A cargar las hora chiques!!!', {})
 });
 
 app.listen('8080');
