@@ -10,9 +10,10 @@ const bot = new SlackBot({
 });
 
 app.post('/monday', (req, res) => {
-    console.log(req.body)
-    bot.postMessage({channel: req.body.channel}, 'A cargar las hora chiques!!!', {})
-    res.send()
+    res.send({
+        "response_type": "in_channel",
+        "text": "A cargar las horas chiques!!",
+    })
 });
 
 app.listen(process.env.PORT || '3000');
