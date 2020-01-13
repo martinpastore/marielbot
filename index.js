@@ -4,11 +4,6 @@ require('dotenv').config();
 
 const app = express();
 
-const bot = new SlackBot({
-    token: `${process.env.BOT_TOKEN}`,
-    name: 'MarielBot'
-});
-
 app.post('/monday', (req, res) => {
     res.send({
         "response_type": "in_channel",
