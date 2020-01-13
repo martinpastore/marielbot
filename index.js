@@ -13,6 +13,9 @@ app.post('/monday', (req, res) => {
     res.send({
         "response_type": "in_channel",
         "text": "A cargar las horas chiques!!",
+        "attachments": [{
+            "text": "https://tarmacio.hubplanner.com/time_sheets"
+        }]
     })
 });
 
