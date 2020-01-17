@@ -4,3 +4,5 @@ const complain = (req, res) => {
         "text": "Si tenés alguna queja, mandala a tuquejasuma@tarmac.io para que la veamos y te demos alguna solución.",
     })
 }
+
+module.exports = complain;
