@@ -6,6 +6,9 @@ const vevo = require('../functions/vevo');
 const coca = require('../functions/coca');
 const complain = require('../functions/complain');
 const invoice = require('../functions/invoice');
+const birthday = require('../functions/birthday');
+const office = require('../functions/office');
+const help = require('../functions/help');
 
 const router = express.Router();
 
@@ -16,5 +19,8 @@ router.post('/vevo', vevo)
 router.post('/coca', coca)
 router.post('/complain', complain)
 router.post('/invoice', invoice)
+router.post('/office', office)
+router.post('/birthday', birthday)
+router.post('/help', help)
 
 module.exports = router;
