@@ -9,6 +9,7 @@ const invoice = require('../functions/invoice');
 const birthday = require('../functions/birthday');
 const office = require('../functions/office');
 const help = require('../functions/help');
+const english = require('../functions/english');
 
 const router = express.Router();
 
@@ -22,5 +23,6 @@ router.post('/invoice', invoice)
 router.post('/office', office)
 router.post('/birthday', birthday)
 router.post('/help', help)
+router.post('/english', english)
 
 module.exports = router;
