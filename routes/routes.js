@@ -10,6 +10,7 @@ const birthday = require('../functions/birthday');
 const office = require('../functions/office');
 const help = require('../functions/help');
 const english = require('../functions/english');
+const holidays = require('../functions/holidays');
 
 const router = express.Router();
 
@@ -24,5 +25,6 @@ router.post('/office', office)
 router.post('/birthday', birthday)
 router.post('/help', help)
 router.post('/english', english)
+router.post('/holidays', holidays)
 
 module.exports = router;
