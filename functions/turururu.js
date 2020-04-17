@@ -4,7 +4,7 @@ const turururu = (req, res) => {
     attachments: [
       {
         image_url:
-          "https://media1.tenor.com/images/d6cc94c4a3cf20996cbab7a03b6204e0/tenor.gif?itemid=16737844",
+          "https://media1.tenor.com/images/00d08a83f7f225e95a0d5b46dec6dec7/tenor.gif?itemid=16790194",
       },
     ],
   });
